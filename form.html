@@ -34,14 +34,23 @@
 			<fieldset class="program-form__main">
 				<legend class="vissually-hidden">Основная информация о Вашем коте</legend>
 
-				<label for="cat-name">Имя:<sup>*</sup></label>
+				<label class="program-form__label" for="cat-name">Имя:<sup>*</sup></label>
 				<input class="program-form__text-input" id="cat-name" type="text" name="cat-name">
 
-				<label for="cat-weight">Вес (кг):<sup>*</sup></label>
+				<label class="program-form__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
 				<input class="program-form__text-input" id="cat-weight" type="text" name="cat-weight">
 
-				<label for="cat-age">Возраст (лет):</label>
+				<label class="program-form__label" for="cat-age">Возраст (лет):</label>
 				<input class="program-form__text-input" id="cat-age" type="text" name="cat-age">
+
+				<input class="program-form__radio-input" id="weight-reduction" type="radio" name="cat-weight">
+				<label class="program-form__label" for="weight-reduction">Похудение</label>
+
+				<input class="program-form__radio-input" id="weight-gain" type="radio" name="cat-weight">
+				<label class="program-form__label" for="weight-gain">Набор массы</label>
+
+				<input class="program-form__radio-input" id="weight-other" type="radio" name="cat-weight">
+				<label class="program-form__label" for="weight-other">Не знаю (нужен ваш совет)</label>
 			</fieldset>
 			<fieldset class="program-form__contacts">
 				<legend class="program-form__legend">Контактные данные (владельца кота)</legend>
