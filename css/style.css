@@ -57,6 +57,10 @@ img {
 	border-bottom: 1px solid #e6e6e6;
 }
 
+.page-header__logo--text {
+	margin-left: -15px;
+}
+
 .page-header__logo-img {
 	display: block;
 }
