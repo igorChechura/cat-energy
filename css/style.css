@@ -74,6 +74,7 @@ img {
 	.page-header__wrapper-outer {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 
 		min-width: 708px;
 		max-width: 1220px;
@@ -193,11 +194,21 @@ img {
 
 	.main-nav__item {
 		margin-right: 36px;
+		padding-top: 13px;
+		padding-bottom: 8px;
 
 		border: none;
 	}
 
+	.main-nav__item--active {
+		border-bottom: 2px solid #68b738;
+	}
+
 	.main-nav__item:last-child {
 		margin-right: 0;;
+	}
+
+	.main-nav__link {
+		padding: 0;
 	}
 }
