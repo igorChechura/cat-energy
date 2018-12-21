@@ -211,6 +211,7 @@ img {
 	.main-nav__link {
 		padding: 0;
 	}
+<<<<<<< HEAD
 }
 
 /* program-selection */
@@ -276,4 +277,6 @@ img {
 
 	background-color: #68b738;
 
+=======
+>>>>>>> parent of 0102ed3... Верстка блока program-selection для мобильных
 }
