@@ -76,6 +76,9 @@ img {
 }
 
 /* page-header */
+.page-header {
+	position: relative;
+}
 
 .page-header__wrapper-inner {
 	display: flex;
@@ -95,6 +98,28 @@ img {
 
 .page-header__logo-img {
 	display: block;
+}
+
+@media (max-width: 767px) {
+	.page-header__program-wrapper {
+		position: relative;
+	}
+
+	.page-header__program-wrapper:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+
+		height: 305px;
+
+		z-index: -2;
+
+		background-image: url("../img/index-background-mobile.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 }
 
 @media (min-width: 768px) {
@@ -126,10 +151,6 @@ img {
 }
 
 @media (min-width: 1300px) {
-	.page-header {
-		position: relative;
-	}
-
 	.page-header:after {
 		content: "";
 
@@ -153,9 +174,6 @@ img {
 		padding-right: 40px;
 	}
 }
-
-
-
 
 /* nav-toogle */
 
@@ -252,8 +270,8 @@ img {
 
 	.main-nav__item {
 		margin-right: 36px;
-		padding-top: 13px;
-		padding-bottom: 8px;
+		padding-top: 14px;
+		padding-bottom: 9px;
 
 		border: none;
 	}
@@ -278,6 +296,11 @@ img {
 @media (min-width: 1300px) {
 	.main-nav__list {
 		font-size: 20px;
+		color: #ffffff;
+	}
+
+	.main-nav__item--active {
+		border-color: #ffffff;
 	}
 }
 
@@ -293,14 +316,16 @@ img {
 	text-align: center;
 }
 
-@media (max-width: 440px) {
+
+
+/* @media (max-width: 440px) {
 	.program-selection {
 		background-image: url("../img/index-background-mobile.jpg");
 		background-repeat: no-repeat;
 		background-position: top center;
 		background-size: 100% auto;
 	}
-}
+} */
 
 .program-selection__slogan {
 	margin: 0;
@@ -327,12 +352,12 @@ img {
 	margin: 0 auto;
 }
 
-@media (min-width: 441px) {
+/* @media (min-width: 441px) {
 	.program-selection__slogan,
 	.program-selection__intro {
 		color: #111111;
 	}
-}
+} */
 
 @media (min-width: 768px) {
 	.program-selection {
@@ -351,6 +376,7 @@ img {
 
 		font-size: 60px;
 		line-height: 60px;
+		color: #111111;
 	}
 
 	.program-selection__intro {
@@ -358,6 +384,7 @@ img {
 
 		font-size: 20px;
 		line-height: 20px;
+		color: #111111;
 	}
 
 	.program-selection__picture {
