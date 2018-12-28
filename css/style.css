@@ -60,8 +60,13 @@ img {
 	background-color: #68b738;
 }
 
-.button--program {
+.button:hover,
+.button:focus {
+	background-color: #5eaa2f;
+}
 
+.button:active {
+	color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: 768px) {
@@ -115,7 +120,7 @@ img {
 		height: 305px;
 
 		z-index: -2;
-		
+
 		background-color: #64a83b;
 		background-image: url("../img/index-background-mobile.jpg");
 		background-repeat: no-repeat;
@@ -257,6 +262,15 @@ img {
 	text-decoration: none;
 }
 
+.main-nav__link:hover,
+.main-nav__link:focus {
+	opacity: 0.6;
+}
+
+.main-nav__link:active {
+	opacity: 0.3;
+}
+
 @media (min-width: 768px) {
 	.main-nav__list {
 		display: flex;
@@ -283,6 +297,12 @@ img {
 
 	.main-nav__item--active {
 		border-bottom: 2px solid #68b738;
+	}
+
+	.main-nav__item--active .main-nav__link:hover,
+	.main-nav__item--active .main-nav__link:focus,
+	.main-nav__item--active .main-nav__link:active {
+		opacity: 1;
 	}
 
 	.main-nav__item:last-child {
