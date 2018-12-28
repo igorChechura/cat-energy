@@ -115,7 +115,8 @@ img {
 		height: 305px;
 
 		z-index: -2;
-
+		
+		background-color: #64a83b;
 		background-image: url("../img/index-background-mobile.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -316,17 +317,6 @@ img {
 	text-align: center;
 }
 
-
-
-/* @media (max-width: 440px) {
-	.program-selection {
-		background-image: url("../img/index-background-mobile.jpg");
-		background-repeat: no-repeat;
-		background-position: top center;
-		background-size: 100% auto;
-	}
-} */
-
 .program-selection__slogan {
 	margin: 0;
 	margin-bottom: 25px;
@@ -351,13 +341,6 @@ img {
 	display: block;
 	margin: 0 auto;
 }
-
-/* @media (min-width: 441px) {
-	.program-selection__slogan,
-	.program-selection__intro {
-		color: #111111;
-	}
-} */
 
 @media (min-width: 768px) {
 	.program-selection {
