@@ -108,7 +108,7 @@ img {
 		align-items: center;
 
 		min-width: 708px;
-		max-width: 1220px;
+		margin: 0 auto;
 		padding-left: 30px;
 		padding-right: 30px;
 	}
@@ -201,6 +201,10 @@ img {
 	border-top: 1px solid #e6e6e6;
 }
 
+.main-nav__item:last-child {
+	border-bottom: 1px solid #e6e6e6;
+}
+
 .main-nav__link {
 	display: block;
 	padding-top: 21px;
@@ -231,6 +235,10 @@ img {
 		border: none;
 	}
 
+	.main-nav__item:last-child {
+		border: none;
+	}
+
 	.main-nav__item--active {
 		border-bottom: 2px solid #68b738;
 	}
@@ -253,7 +261,7 @@ img {
 	padding-right: 20px;
 	padding-left: 20px;
 
-	text-align: center;	
+	text-align: center;
 }
 
 @media (max-width: 440px) {
@@ -301,10 +309,10 @@ img {
 	.program-selection {
 		position: relative;
 
-		max-width: 1220px;
+		max-width: none;
 		margin-left: 30px;		
 		margin-right: 30px;
-		padding: 58px 0 530px 90px;
+		padding: 58px 0 530px 11.72%;
 
 		text-align: left;
 	}
@@ -317,7 +325,7 @@ img {
 	}
 
 	.program-selection__intro {
-		
+		margin-bottom: 48px;
 
 		font-size: 20px;
 		line-height: 20px;
