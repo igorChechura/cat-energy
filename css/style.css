@@ -317,12 +317,16 @@ img {
 	}
 
 	.program-selection__intro {
+		
+
 		font-size: 20px;
 		line-height: 20px;
 	}
 
-	.program-selection__image {
+	.program-selection__picture {
 		position: absolute;
+		left: 0;
+		right: 0;
 		bottom: 0;
 
 		z-index: -1;
