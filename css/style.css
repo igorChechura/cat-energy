@@ -237,7 +237,7 @@ img {
 	width: 24px;
 	height: 2px;
 
-	background-color: #000000;
+	background-color: #000000;	
 }
 
 .nav-toggle:before {
@@ -280,6 +280,12 @@ img {
 
 .main-nav {
 	/* margin: 0 auto; */
+}
+
+@media (max-width: 767px) {
+	.main-nav--closed {
+		display: none;
+	}
 }
 
 .main-nav__list {
